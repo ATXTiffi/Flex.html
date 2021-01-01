@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👾WILLKOMMEN👾</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">707</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Game
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Discord</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Discord-Bot</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rick</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <br>
+      <input style="margin-left: 20px; background: #222; background-position-x: 100%;" type="text" id="user-caption" value="
+      >>> log.start/login?boot_id=nf7281000283619_kill=truh<br>
+      >>> find.Account(log?file_kill)<br>
+                                            >>>[Success]<br>
+      >>>get.ip(if== 176.879.23.0.1){log?file_kill_kill.file.log}<br>
+      >>> /=/ (❁´◡`❁)WILLKOMMEN IN 707.KeyLogger(❁´◡`❁) /=/<br>
+      >>> **<br>
+      >>> ****<br>
+      >>> ******<br>
+      >>> ******** 100%<br>
+
+      [SERVER] Conected<br>
+      [707]    Conected<br>
+      [707]    *.*.Kill.Del.shutdown-s -t -123.638.92.0.all <br>
+      [SERVER] OFFLINE<br>
+      >>> *.*.files(Downloading)<br>
+      ////////////////////////////finish///////////////////////////////////<br><br>
+      code made by Rick.707
+      
+                                                
+                                                
+      " />
+<br>
+
+    <input  class="btn btn-warning" style="margin: 10px;" type="button" id="test-typing" value="start change" /><br>
+    <input class="btn btn-warning" style="margin: 10px;" type="button" id="test-erasing" value="abbrechen" /><br>
+<p><a style="margin-left: 20px;" href="https://www.w3schools.com/html/">wenn es fertig bist</a></p>
+
+
+</p>
+<p class="console" style="margin-left: 20px;">
+    <span>/</span><span id="caption"></span><span id="cursor">|</span>
+</p>
+</body>
+<style>
+    .console
+{
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+}
+    #user-caption{
+        color: #222;
+    }
+    input[type="button"]
+{
+  cursor: pointer;
+}
+</style>
+<script>var captionLength = 0;
+    var caption = '';
+    
+    
+    $(document).ready(function() {
+        setInterval ('cursorAnimation()', 600);
+        captionEl = $('#caption');
+        
+        $('#test-typing').click(function(){
+            testTypingEffect();
+        });
+    
+        $('#test-erasing').click(function(){
+            testErasingEffect();
+        });
+    });
+    
+    function testTypingEffect() {
+        caption = $('input#user-caption').val();
+        type();
+    }
+    
+    function type() {
+        captionEl.html(caption.substr(0, captionLength++));
+        if(captionLength < caption.length+1) {
+            setTimeout('type()', 50);
+        } else {
+            captionLength = 0;
+            caption = '';
+        }
+    }
+    
+    function testErasingEffect() {
+        caption = captionEl.html();
+        captionLength = caption.length;
+        if (captionLength>0) {
+            erase();
+        } else {
+            $('#caption').html("You didn't write anything to erase, but that's ok!");
+            setTimeout('testErasingEffect()', 1000);
+        }
+    }
+    
+    function erase() {
+        captionEl.html(caption.substr(0, captionLength--));
+        if(captionLength >= 0) {
+            setTimeout('erase()', 50);
+        } else {
+            captionLength = 0;
+            caption = '';
+        }	
+    }
+    
+    function cursorAnimation() {
+        $('#cursor').animate({
+            opacity: 0
+        }, 'fast', 'swing').animate({
+            opacity: 1
+        }, 'fast', 'swing');
+    }</script>
+</html>
